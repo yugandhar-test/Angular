@@ -7,7 +7,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
+  private hide = true;
+
   constructor() {
+    setTimeout(() => {
+      this.hide = false;
+    }, 7000);
   }
 
   ngOnInit() {

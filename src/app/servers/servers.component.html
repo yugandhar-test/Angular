@@ -1,14 +1,21 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <button class="btn btn-primary">Add Server</button>
       <app-server></app-server>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <button class="btn btn-primary" disabled>Add Server</button>
       <app-server></app-server>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
+      <H4>Is button hidden? {{hide}}</H4> <!-- notice how hide is use as string interpolation -->
+      <div [hidden]="hide"> <!-- however here hide is use as property bind -->
+        <button class="btn btn-primary" disabled>Add Server</button>
+      </div>
+      <app-server></app-server>
+    </div>
+    <div class="col-sm-3">
       <app-server></app-server>
     </div>
   </div>
