@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
-import { ServerComponent} from './server/server.component';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: [`
+    h3 {
+      color: aquamarine;
+    }`
+  ]
 })
 export class AppComponent {
   name = '';
